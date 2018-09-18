@@ -17,7 +17,7 @@ Example
 
 This example file called readframes.py (see demos) read ethernet frames
 
-     !/usr/bin/env python
+     #!/usr/bin/env python
      import sys
      from pyEtherIP import *
 
@@ -37,7 +37,7 @@ This example file called readframes.py (see demos) read ethernet frames
                 count = count + 1
         except KeyboardInterrupt:
                 print('Stop')
-                noPromisc('enp5s0',s)
+                noPromisc(dev,s)
                 break
 
      noPromisc(dev,s)
