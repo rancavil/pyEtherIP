@@ -10,6 +10,10 @@ PyEtherIP is a packet's sniffer that configure the network device in promisc mod
 INSTALL
 -------
 
+     $ pip install git+https://github.com/rancavil/pyEtherIP.git
+
+or 
+     $ git clone https://github.com/rancavil/pyEtherIP.git
      $ sudo python setup.py install
 
 Example
@@ -45,7 +49,9 @@ This example file called readframes.py (see demos) read ethernet frames
 To execute the script, execute the following commands.
 
     $ chmod +x readframes.py
-    $ ./readframe <mydev> 100
+    $ sudo ./readframe <mydev> 100
+
+To run you must be root.
 
 Replace mydev with your network device. The number (100) means that 100 frames will be read.
 
