@@ -13,6 +13,7 @@ INSTALL
      $ pip install git+https://github.com/rancavil/pyEtherIP.git
 
 or 
+
      $ git clone https://github.com/rancavil/pyEtherIP.git
      $ sudo python setup.py install
 
