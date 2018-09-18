@@ -5,7 +5,7 @@ from pyEtherIP import *
 
 if __name__ == '__main__':
     if len(sys.argv) < 3:
-        print('Usage : sudo readframes.py <network_interface> <num_frames>')
+        print('Usage : sudo readip.py <network_interface> <num_frames>')
         sys.exit(1)
 
     dev = sys.argv[1]
