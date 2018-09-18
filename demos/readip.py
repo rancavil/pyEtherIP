@@ -20,7 +20,7 @@ if __name__ == '__main__':
                 count = count + 1
         except KeyboardInterrupt:
             print('Stop')
-            noPromisc('enp5s0',s)
+            noPromisc(dev,s)
             break
 
     noPromisc(dev,s)

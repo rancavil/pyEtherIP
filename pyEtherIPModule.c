@@ -323,18 +323,19 @@ struct module_state {
 static struct module_state _state;
 #endif
 
-/**
+
 static PyObject *error_out(PyObject *m) {
     struct module_state *st = GETSTATE(m);
     PyErr_SetString(st->error, "something bad happened");
     return NULL;
 }
-**/
+
 static PyMethodDef Methods[] = {
  {"promisc",promisc,METH_VARARGS,"Config network device to promisc mode"},
  {"noPromisc",noPromisc,METH_VARARGS,"Back network device to normal mode"},
  {"readIPHeader",readIPHeader,METH_VARARGS,"Read IP Headers"},
  {"readFrame",readFrame,METH_VARARGS,"Read Ethernet Frames"},
+ {"error_out", (PyCFunction)error_out, METH_NOARGS, NULL},
  {NULL,NULL,0,NULL}
 };
 
