@@ -56,9 +56,13 @@ To run you must be root.
 
 Replace mydev with your network device. The number (100) means that 100 frames will be read.
 
-The output must be a sequence of python dictionaries that represents ethernets frames.
+The output must be a sequence of python dictionaries that represents ethernet frames.
 
      {'proto': 17, 's_port': 443, 'ethaddr_s': '84:AA:9D:6E:84:10', 'ipaddr_d': '10.0.0.87', 'd_port': 50783, 'ipaddr_s': '192.28.6.82', 'ethaddr_d': '74:27:AA:4B:5E:F1', 'eth_proto': '800'}
+
+The dictionary shows a raw ethernet frame.
+
+For example, proto 17 = UDP, proto 6 = TCP, ethaddr_s and ethaddr_d are the MAC of source (origin) and destination, ipaddr_s and ethaddr_d are the source (origin) and destination ip addresses, and eth_proto is the type of protocol transported in the frame, 800 is 0x0800 IP.
 
 See demos for more examples.
 

@@ -378,12 +378,13 @@ void initpyEtherIP(void)
     PyObject *mod = PyModule_Create(&moduledef);
 #else
     PyObject *mod = Py_InitModule("pyEtherIP",Methods);
+#endif
     PyObject *exc = PyModule_GetDict(mod);
     pyEtherError = PyErr_NewException("pyEtherIP.pyEtherError",NULL,NULL);
     PyDict_SetItemString(exc,"pyEtherError",pyEtherError);
-#endif
 
-if (mod == NULL)
+    /*
+    if (mod == NULL)
         INITERROR;
     struct module_state *st = GETSTATE(mod);
 
@@ -392,6 +393,7 @@ if (mod == NULL)
         Py_DECREF(mod);
         INITERROR;
     }
+    */
 
 #if PY_MAJOR_VERSION >= 3
     return mod;
