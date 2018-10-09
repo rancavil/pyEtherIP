@@ -271,7 +271,7 @@ static PyObject *readFrame(PyObject *self,PyObject *args)
 				     "ethaddr_s",ethaddr_s,\
 				     "ethaddr_d",ethaddr_d,\
 				     "eth_proto",eth_proto,\
-				     "idpaddr_s",ipaddr_s,\
+				     "ipaddr_s",ipaddr_s,\
 				     "ipaddr_d",ipaddr_d,\
 				     "proto",proto,\
 				     "s_port",sport,\
