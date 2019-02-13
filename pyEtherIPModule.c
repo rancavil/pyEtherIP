@@ -323,10 +323,10 @@ struct module_state {
 static struct module_state _state;
 #endif
 
-
+/* cporting snippet */
 static PyObject *error_out(PyObject *m) {
     struct module_state *st = GETSTATE(m);
-    PyErr_SetString(st->error, "something bad happened");
+    PyErr_SetString(st->error, "error something has happened");
     return NULL;
 }
 
