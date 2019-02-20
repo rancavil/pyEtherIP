@@ -1,7 +1,7 @@
 PyEtherIP
 =========
 
-This is a python module to capute and read ethernet frames and ip packets from network.
+This is a python module to capture and read ethernet frames and ip packets from network.
 
 With pyEtherIP you can monitoring the network traffic writing python's scritps. A simple python script, reads each ethernet frames and ip packets and represents it like a python dictionary.
 
